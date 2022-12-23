@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Alejandra Zapién Vázquez">
+    <meta name="description" content="Portafolio de desarrollo web de Alejandra Zapién Vázquez">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Alex Zapién| Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/3449/3449750.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="C:\Users\USUARIO\Documents\TECNOLOCHICASPRO_HTML\tecnolochicaspro_portafolio\imagenes\readme\AleZava.jpg" alt="Foto de Jane Doe">
+        <h1>Hola, soy Alejandra Zapién Vázquez </h1>
+        <!--<h2>Estudiante en Sistemas Computacionales.</h2>-->
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter" ></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Alejandra Zapién Vázquez</h2>
+        <p class="seccion-texto">Soy estudiante en Sistemas computacionales de tercer semestre en 
+          el Instituto Tecnológico de Hermosillo. Actualmente estoy cursando una capacitación en
+           Tecnolochicas PRO adquiriendo habilidades sobre desarrollo web con HTML, CSS
+            y JavaScript. Me considero una mujer que ama encontrar soluciones .</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Construyo sitios web responsivos y modernos con diferentes tecnologías. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Hobbies</p>
+            <p>Me gusta leer sobre temas relacionados a tecnología,emprender y tocar la guitarra. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Emprendimiento</span>
+              <span class="badge text-bg-primary">Lectura</span>
+              <span class="badge text-bg-primary">Musica</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Soy estudiante de tercer semestre en ingenieria en sistemas
+             computacionales en el istituto tecnológico de Hermosillo  </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Tecnolochicas PRO</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Java</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+            <img src="imagenes/proyecto1.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/AleZapienVazquez/clonacion-google" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com/AleZapienVazquez/clonacion-google" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="data:image/jpeg;base64,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" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/AleZapienVazquez/Coca-Cola-Clopnacion" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto3.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto4.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto5.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto6.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/AleZapienVazquez" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Artículos</h2>
+      <div class="card">
+        <div class="card-header">
+        Leídos más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://dev.to/rhonsanchez/que-es-el-desarrollo-de-software-y-desarrollo-web-3jc6"
+           target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+             ¿Qué es el Desarrollo de software y Desarrollo Web?
+            </li>
+          </a>
+          <a href="https://nancynsalazar.medium.com/c%C3%B3mo-ser-un-a-mejor-programador-a-749c1bf98990" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Cómo ser un(a) mejor programador(a)
+            </li>
+          </a>
+          <a href="https://dev.to/jehielmartinez/como-crear-un-portafolio-de-tus-proyectos-en-github-pages-3jm" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Cómo crear un portafolio de tus proyectos en Github Pages
+            </li>
+          </a>
+          <a href="https://dev.to/adelazalewski/react-application-and-a-team-work-environment-3ij4" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Aplicación React y un entorno de trabajo en equipo
+            </li>
+          </a>
+          <a href="https://dev.to/humblecoder00/deep-dive-into-data-structures-using-javascript-linked-list-2i8g" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Inmersión profunda en las estructuras de datos usando Javascript - Lista enlazada
+            </li>
+          </a>
+        </ul>
+      </div>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="C:\Users\USUARIO\Documents\TECNOLOCHICASPRO_HTML\tecnolochicaspro_portafolio\imagenes\Nancy Salazar_6 (1).jpg" alt="Foto de Nancy">
+              <p class="testimonio-texto">Alejandra Zapién demostró ser una buena estudiante mientras estuvo en el bootcamp de Tecnolochicas PRO. 
+                Mostró bastante interés en desarrollar sus habilidades como programadora web y realizó proyectos muy interesantes.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Nancy Salazar</p>
+                <p class="cargo">Maestra de Bootcamp</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="C:\Users\USUARIO\Documents\TECNOLOCHICASPRO_HTML\tecnolochicaspro_portafolio\imagenes\paul.jpg" alt="Foto de Paul">
+              <p class="testimonio-texto">Alejandra Zapién ha demostrado en su tiempo como coordinadora del area de eventos financieros ser una persona que se esfuerza para obtener los mejores resultados .</p>
+              <div class="testimonio-info">
+                <p class="cliente">Paul Isaac Torres</p>
+                <p class="cargo">Presidente de comité Proxy</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.svg" alt="Foto de Leonardo">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Leonardo</p>
+                <p class="cargo">Director de AprendeAProgramar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:zapienvazquezalejandra@gmail.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Si lo puedes imaginar,lo puedes programar ♥ .<br></p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://github.com/AleZapienVazquez" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/andreazapienvazquez/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:zapienvazquezalejandra@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Alejandra Zapién Vázquez (2022) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
